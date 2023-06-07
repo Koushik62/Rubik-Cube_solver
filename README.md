@@ -1,2 +1,2 @@
 # Rubik-Cube_solver
-Rubrik-Cube_solver
+Rubik-Cube_solver
