@@ -33,6 +33,8 @@ void NibbleArray::set(const size_t pos, const uint8_t val){
 
     if(pos%2){
         this->arr.at(i) = (currVal & 0xF0) | (val & 0x0F);
+        //0x0F to preserve last 4 bits, while making the first 4 bits zero.
+        // as it is odd we need to put it at from last(4 bits from right)
     }
     else{
         this->arr.at(i) = (currVal & 0x0F ) | (val<<4);
