@@ -14,6 +14,8 @@ private:
         for (int i = 0; i < 3; i++) cube[ind][i][2] = temp_arr[0][i];
         for (int i = 0; i < 3; i++) cube[ind][2][2 - i] = temp_arr[i][2];
         for (int i = 0; i < 3; i++) cube[ind][2 - i][0] = temp_arr[2][2 - i];
+        // this represents the rotated version of rotated, down the code we change 
+        // the 4 sides of this surface
     }
 
 public:
@@ -88,6 +90,8 @@ public:
 
     RubiksCube &l() override {
         this->rotateFace(1);
+        // this will change rotated face after this we are changing the 4 sides
+        // of the face.
 
         char temp_arr[3] = {};
         for (int i = 0; i < 3; i++) temp_arr[i] = cube[0][i][0];
