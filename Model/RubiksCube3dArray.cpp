@@ -62,6 +62,8 @@ public:
 
     RubiksCube &u() override {
         this->rotateFace(0);
+        // this will change rotated face after this we are changing the 4 sides
+        // of the face.
 
         char temp_arr[3] = {};
         for (int i = 0; i < 3; i++) temp_arr[i] = cube[4][0][2 - i];
@@ -90,8 +92,7 @@ public:
 
     RubiksCube &l() override {
         this->rotateFace(1);
-        // this will change rotated face after this we are changing the 4 sides
-        // of the face.
+        
 
         char temp_arr[3] = {};
         for (int i = 0; i < 3; i++) temp_arr[i] = cube[0][i][0];
