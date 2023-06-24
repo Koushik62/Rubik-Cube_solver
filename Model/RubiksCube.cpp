@@ -318,4 +318,4 @@ uint8_t RubiksCube::getCornerOrientation(uint8_t ind) const {
     } else if (corner[2] == actual_str[0]) {
         return 2;
     } else return 0;
-}
+} //this particular part is not understood clerly
