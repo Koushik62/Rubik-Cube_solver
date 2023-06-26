@@ -140,7 +140,9 @@ public:
 
         this->rotateSide(2, 0, 7, 6, 0, 0, 7, 6);
         this->rotateSide(0, 0, 7, 6, 4, 4, 3, 2);
-        this->rotateSide(4, 4, 3, 2, 5, 0, 7, 6);
+        this->rotateSide(4, 4, 3, 2, 5, 0, 7, 6); 
+        // it is assigning s2 values to s1,so 5th face 0,7,6 got assigned 
+        // to 4th face 4 3 2
 
         bitboard[5] = (bitboard[5] & ~(one_8 << (8 * 0))) | (clr1 << (8 * 0));
         bitboard[5] = (bitboard[5] & ~(one_8 << (8 * 6))) | (clr2 << (8 * 6));
