@@ -3,26 +3,18 @@
         {
             "name": "Win32",
             "includePath": [
-                "c:\\Users\\Gurram koushik reddy\\OneDrive - Indian Institute of Technology Bombay\\Desktop\\Rubik-Cube_solver/**"
+                "C:\\MinGW\\include"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
-            "windowsSdkVersion": "10.0.22000.0",
-            "compilerPath": "cl.exe",
+            "compilerPath": "C:/MinGW/bin/g++.exe",
             "cStandard": "c11",
-            "cppStandard": "c++14",
-            "intelliSenseMode": "windows-msvc-x64",
-            "compilerPathInCppPropertiesJson": "C:\MinGW\bin",
-            "mergeConfigurations": false,
-            "browse": {
-                "path": [
-                    "${workspaceFolder}/**"
-                ],
-                "limitSymbolsToIncludedHeaders": true
-            }
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "windows-gcc-x86"
         }
-    ]
-}        
+    ],
+    "version": 4
+}
